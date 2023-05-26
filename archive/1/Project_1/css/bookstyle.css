@@ -1,0 +1,181 @@
+body {
+    margin: auto;
+    padding: 15px; 
+    color: #000;
+    font-family: 'Lato', sans-serif;
+}
+
+/* --- grid set up --- */
+.wrapper {
+    display: grid;
+    grid-template-columns: 300px 2fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "logo banner banner"
+        "nav nav nav"
+        "main main side"
+        "footer footer footer";
+    grid-gap: 4px;
+}
+
+/* --- end of grid set up --- */
+
+/* --- area styling --- */
+.box {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #b59377;
+    /* Sandrift brown */
+}
+
+.logo {
+    grid-area: logo;
+    padding: 0;
+    height: 200px;
+    width: 300px;
+    background-image: url(../images/logo-v2.png)
+}
+
+.banner {
+    grid-area: banner;
+}
+
+.nav {
+    grid-area: nav;
+
+
+    background-color: #984e38;
+    /* Mojo red */
+    font-size: 120%;
+    text-align: center;
+}
+
+.main {
+    grid-area: main;
+    background-color: #b59377;
+    /* Sandrift brown */
+}
+
+.side {
+    grid-area: side;
+    background-color: #764b2f;
+    /* Cape Palliser brown */
+}
+
+.footer {
+    grid-area: footer;
+    text-align: right;
+}
+
+/* --- end of area styling --- */
+/* --- colour styling --- */
+.logo,
+.banner,
+.footer {
+    background-color: #a86f43;
+    /*Bourbon brown */
+}
+
+.logo,
+.banner,
+.side,
+.footer {
+    color: #fff;
+    /* white */
+}
+
+/* --- end of colour styling --- */
+
+
+/* --- nav links --- */
+.nav {
+    margin: 0px;
+    padding: 10px 0 10px 10px;
+    border-style: solid;
+    border-width: 1px 0 0 0;
+    overflow: hidden;
+}
+
+.nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 2.5em 0 5px;
+    padding: 0;
+
+
+    float: left;
+    font-size: 1.2em;
+    display: inline;
+}
+
+.nav ul li a {
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid #000000;
+    margin: 5px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    float: left;
+    -moz-box-shadow: rgba(0, 0, 0, .8) 1px 1px 3px;
+    -webkit-box-shadow: rgba(0, 0, 0, .8) 1px 1px 3px;
+    box-shadow: rgba(0, 0, 0, .8) 1px 1px 3px;
+}
+
+/* Background colour for navigation buttons */
+.nav ul a:link,
+nav ul a:visited {
+    background: #50311d;
+}
+
+/* Background colour changes when hovering */
+.nav ul a:hover,
+nav ul a:active,
+nav ul a:focus {
+    background: #b59377;
+}
+
+/* --- colour styling --- */
+.logo,
+.banner,
+.footer {
+    background-color: #a86f43;
+}
+
+.logo,
+.banner,
+.side,
+.footer {
+    color: #fff;
+
+}
+
+/* --- end of colour styling --- */
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* ---sidebar image styling --- */
+
+.img-side {
+    border-radius: 50%;
+    max-width: 85%;
+    height: auto;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.8);
+    margin-left: 40px;
+}
+
+/* ---contact form styling--- */
+
+.contact {
+    width: 100%;
+}
